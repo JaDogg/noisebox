@@ -1,0 +1,31 @@
+{
+  "sounds": {
+    "thunder_left": "leftThunder.wav",
+    "thunder_right": "rightThunder.wav",
+    "rain": "rain-06-cut-loop.wav"
+  },
+  "_sounds": "sound name to file reference",
+  "channels": 10,
+  "_channels": "total number of things that can play at one time",
+  "loop": [
+    {
+      "sound": "rain",
+      "vol": 0.3
+    }
+  ],
+  "_loop": "all these sounds will be looped with given volume",
+  "randomly_pick_and_play": [
+    {
+      "sound": "thunder_left",
+      "vol": 1
+    },
+    {
+      "sound": "thunder_right",
+      "vol": 1
+    }
+  ],
+  "_randomly_pick_and_play": "all these sound files will be played at random intervals",
+  "random_pick_start_on": 3,
+  "random_pick_seconds_min": 12,
+  "random_pick_seconds_max": 20
+}
