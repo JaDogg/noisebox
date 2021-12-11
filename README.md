@@ -9,7 +9,7 @@ Background music/noise generator for concentration.
 
 Icon: By Vitaly Gorbachev - https://www.flaticon.com/free-icon/wind_959737
 
-### Installation and use.
+### Installation and use
 
 ```shell
 git clone git@github.com:JaDogg/noisebox.git
