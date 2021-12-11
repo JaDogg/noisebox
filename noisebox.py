@@ -4,7 +4,19 @@ import sys
 import time
 import random
 
-from pygame import mixer
+# created using - https://patorjk.com/software/taag/#p=display&f=Graffiti&t=NoiseBox
+BANNER = r"""
+ _______         .__             __________              
+ \      \   ____ |__| ______ ____\______   \ _______  ___
+ /   |   \ /  _ \|  |/  ___// __ \|    |  _//  _ \  \/  /
+/    |    (  <_> )  |\___ \\  ___/|    |   (  <_> >    < 
+\____|__  /\____/|__/____  >\___  >______  /\____/__/\_ \
+        \/               \/     \/       \/            \/
+NoiseBox - Background music/noise generator for concentration. 
+"""
+print(BANNER)
+
+from pygame import mixer  # noqa
 
 if getattr(sys, 'frozen', False):
     APP_PATH = os.path.abspath(os.path.dirname(sys.executable))
