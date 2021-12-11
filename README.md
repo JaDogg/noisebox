@@ -2,6 +2,8 @@
 
 Background music/noise generator for concentration. 
 
+![](https://github.com/JaDogg/noisebox/blob/main/images/noisebox.png)
+
 * Please supply your own sound loops. 
   * I had to modify one on my own. But I am not allowed to redistribute it :( 
 * Uses PyGame. :) 
