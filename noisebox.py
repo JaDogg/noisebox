@@ -15,8 +15,9 @@ BANNER = r"""
 NoiseBox - Background music/noise generator for concentration. 
 """
 print(BANNER)
-
 from pygame import mixer  # noqa
+
+DEBUG = True  # Change this to `False` to avoid printing what's played
 
 if getattr(sys, 'frozen', False):
     APP_PATH = os.path.abspath(os.path.dirname(sys.executable))
@@ -29,7 +30,7 @@ with open(os.path.join(APP_PATH, "mix.json")) as j:
 
 SECONDS_MIN = MIX["random_pick_seconds_min"]
 SECONDS_MAX = MIX["random_pick_seconds_max"]
-START_ON = MIX["random_pick_start_on"]
+START_ON = MIX["random_pick_start_on_seconds"]
 CHANNELS = MIX["channels"]
 RANDOM_SOUNDS = MIX["randomly_pick_and_play"]
 
@@ -37,11 +38,18 @@ RANDOM_SOUNDS = MIX["randomly_pick_and_play"]
 def play(item, loops):
     track = item["sound"]
     volume = item["vol"]
+    if DEBUG:
+        if loops == -1:
+            print("Looping '{0}' at volume {1}".format(track, volume))
+        else:
+            print("Play '{0}' at volume {1}".format(track, volume))
     SOUNDS[track].set_volume(volume)
     SOUNDS[track].play(loops)
 
 
 def main():
+    if DEBUG:
+        print("----")
     mixer.init()
     mixer.set_num_channels(CHANNELS)
     for k, value in MIX["sounds"].items():
@@ -61,6 +69,8 @@ def do_random_pick():
 
 
 def play_random_pick():
+    if not RANDOM_SOUNDS:
+        return
     track = random.choice(RANDOM_SOUNDS)
     play(track, loops=0)
 
