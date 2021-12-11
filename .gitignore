@@ -203,3 +203,7 @@ coverage-report/
 
 # Do not include wav files I am not allowed to distribute
 *.wav
+
+.venv
+build
+dist
