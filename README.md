@@ -1,6 +1,6 @@
-# NoiseBox
+# 🎶🎵📦 NoiseBox
 
-Your personal background / study noise generator.
+Background music/noise generator for concentration. 
 
 * Please suplly your own sound loops. I had to modify one on my own. But I am not allowed to redistribute it :( 
 * Uses PyGame. :) 
