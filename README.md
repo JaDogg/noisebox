@@ -22,6 +22,10 @@ python noisebox.py
 ```
 * Optionally Create a Virtual Environment
 
+#### How do I customize the audio mix?
+* Add any audio loops/cuts to `noise` folder.
+* Edit `mix.json`
+
 ### Creating an .exe in Windows
 
 ```shell
