@@ -1,6 +1,6 @@
 # 🎶🎵📦 NoiseBox
 
-Background music/noise generator for concentration. 
+Background noise generator for concentration in your terminal. 
 
 ![](https://github.com/JaDogg/noisebox/blob/main/images/noisebox.png)
 
@@ -12,7 +12,7 @@ Background music/noise generator for concentration.
 * Garbage Collector Sound - https://freesound.org/people/Zabuhailo/sounds/165776/
 * Icon: By Vitaly Gorbachev - https://www.flaticon.com/free-icon/wind_959737
 
-### Installation and use
+### Installation and use (Need Python3.6+)
 
 ```shell
 git clone git@github.com:JaDogg/noisebox.git
@@ -30,7 +30,7 @@ build
 ```
 --------
 
-    NoiseBox - Background music/noise generator for concentration. 
+    NoiseBox - Background noise generator for concentration in your terminal. 
     Copyright (C) 2019 - 2021 Bhathiya Perera
 
     This program is free software: you can redistribute it and/or modify

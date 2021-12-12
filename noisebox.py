@@ -12,12 +12,12 @@ BANNER = r"""
 /    |    (  <_> )  |\___ \\  ___/|    |   (  <_> >    < 
 \____|__  /\____/|__/____  >\___  >______  /\____/__/\_ \
         \/               \/     \/       \/            \/
-NoiseBox - Background music/noise generator for concentration. 
+NoiseBox - Background noise generator for concentration in your terminal. 
 """
 print(BANNER)
 from pygame import mixer  # noqa
 
-DEBUG = False  # Change this to `True` to avoid print what's played
+DEBUG = False  # Change this to `True` to print what's played
 
 if getattr(sys, 'frozen', False):
     APP_PATH = os.path.abspath(os.path.dirname(sys.executable))
