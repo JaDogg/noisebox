@@ -1,31 +1,52 @@
 {
+  "description": "Rain & Cafe Mix",
+  "banner": "      )  (\n     (   ) )\n      ) ( (\n mrf_______)_\n .-'---------|  \n( C|/\\/\\/\\/\\/|\n '-./\\/\\/\\/\\/|\n   '_________'\n    '-------'",
   "sounds": {
-    "thunder_left": "leftThunder.wav",
-    "thunder_right": "rightThunder.wav",
-    "rain": "rain-06-cut-loop.wav"
+    "talking_loop": "loop_1m_482990__priesjensen__people-talking-at-cafe-ambience.wav",
+    "raining_loop": "looped_531947__straget__the-rain-falls-against-the-parasol.wav",
+    "talking_cut1": "cut1_482990__priesjensen__people-talking-at-cafe-ambience.wav",
+    "talking_cut2": "cut2_482990__priesjensen__people-talking-at-cafe-ambience.wav",
+    "ice_maker": "399916__freetousesounds__motel-6-ice-maker-machine.wav",
+    "garbage_collector": "165776__zabuhailo__garbage-removal-using-special-truck.wav"
   },
   "_sounds": "sound name to file reference",
-  "channels": 10,
+  "channels": 15,
   "_channels": "total number of things that can play at one time",
   "loop": [
     {
-      "sound": "rain",
-      "vol": 0.3
+      "sound": "talking_loop",
+      "vol": 0.6
+    },
+    {
+      "sound": "raining_loop",
+      "vol": 0.45
     }
   ],
   "_loop": "all these sounds will be looped with given volume",
   "randomly_pick_and_play": [
     {
-      "sound": "thunder_left",
-      "vol": 1
+      "sound": "talking_cut1",
+      "vol": 0.8
     },
     {
-      "sound": "thunder_right",
-      "vol": 1
+      "sound": "talking_cut1",
+      "vol": 0.8
+    },
+    {
+      "sound": "talking_cut2",
+      "vol": 0.8
+    },
+    {
+      "sound": "ice_maker",
+      "vol": 0.9
+    },
+    {
+      "sound": "garbage_collector",
+      "vol": 0.9
     }
   ],
   "_randomly_pick_and_play": "all these sound files will be played at random intervals",
-  "random_pick_start_on": 3,
-  "random_pick_seconds_min": 12,
-  "random_pick_seconds_max": 20
+  "random_pick_start_on_seconds": 12,
+  "random_pick_seconds_min": 6,
+  "random_pick_seconds_max": 30
 }

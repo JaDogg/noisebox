@@ -17,7 +17,7 @@ NoiseBox - Background music/noise generator for concentration.
 print(BANNER)
 from pygame import mixer  # noqa
 
-DEBUG = True  # Change this to `False` to avoid printing what's played
+DEBUG = False  # Change this to `True` to avoid print what's played
 
 if getattr(sys, 'frozen', False):
     APP_PATH = os.path.abspath(os.path.dirname(sys.executable))
@@ -27,6 +27,9 @@ else:
 SOUNDS = {}
 with open(os.path.join(APP_PATH, "mix.json")) as j:
     MIX = json.load(j)
+
+MIX_BANNER = MIX["banner"]
+MIX_DESCRIPTION = MIX["description"]
 
 SECONDS_MIN = MIX["random_pick_seconds_min"]
 SECONDS_MAX = MIX["random_pick_seconds_max"]
@@ -48,6 +51,10 @@ def play(item, loops):
 
 
 def main():
+    print("=" * 20)
+    print("Mix - ", MIX_DESCRIPTION)
+    print(MIX_BANNER)
+    print("=" * 20)
     if DEBUG:
         print("----")
     mixer.init()
