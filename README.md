@@ -25,6 +25,8 @@ python noisebox.py
 #### How do I customize the audio mix?
 * Add any audio loops/cuts to `noise` folder.
 * Edit `mix.json`
+* If you want to make your own loops see [this](https://gamedevbeginner.com/create-looping-sound-effects-for-games-for-free-with-audacity/).
+* You can also fork the repo and install from that and then edit `mix.json` (so you can save it to github).
 
 ### Creating an .exe in Windows
 
