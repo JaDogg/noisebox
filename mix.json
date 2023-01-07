@@ -10,6 +10,8 @@
     "garbage_collector": "165776__zabuhailo__garbage-removal-using-special-truck.wav"
   },
   "_sounds": "sound name to file reference",
+  "global_volume": 1.0,
+  "_global_volume": "Multiply vol by this number for loops and random sounds",
   "channels": 15,
   "_channels": "total number of things that can play at one time",
   "loop": [

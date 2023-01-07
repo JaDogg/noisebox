@@ -36,11 +36,11 @@ SECONDS_MAX = MIX["random_pick_seconds_max"]
 START_ON = MIX["random_pick_start_on_seconds"]
 CHANNELS = MIX["channels"]
 RANDOM_SOUNDS = MIX["randomly_pick_and_play"]
-
+GLOBAL_VOLUME = float(MIX.get("global_volume", 1.0))
 
 def play(item, loops):
     track = item["sound"]
-    volume = item["vol"]
+    volume = float(item["vol"]) * GLOBAL_VOLUME
     if DEBUG:
         if loops == -1:
             print("Looping '{0}' at volume {1}".format(track, volume))
